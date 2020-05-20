@@ -16,15 +16,17 @@ class Triangle
       sides > @side_2 ||
       sides > @side_3
       true
+    else
+      false
     end
   end
 
 
   def kind
     sides = @side_1 + @side_2 + @side_3
-    if
-      @side_1 > 0 && @side_2 > 0 && @side_3 > 0 &&
-      sides > @side_1 || sides > @side_2 || sides > @side_3
+    if legal_triangle? == true
+      # @side_1 > 0 && @side_2 > 0 && @side_3 > 0 &&
+      # sides > @side_1 || sides > @side_2 || sides > @side_3
 
       if
         @side_1 != @side_2 &&
