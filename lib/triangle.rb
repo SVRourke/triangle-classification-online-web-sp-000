@@ -45,6 +45,5 @@ class Triangle
     end
   end
   class TriangleError < StandardError
-    "Error"
   end
 end
