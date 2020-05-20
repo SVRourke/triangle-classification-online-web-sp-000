@@ -21,7 +21,7 @@ class Triangle
 
 
   def kind
-    if self.legal_triangle?
+    if self.legal_triangle? == true
       if
         @side_1 != @side_2 &&
         @side_1 != @side_3 &&
