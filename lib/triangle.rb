@@ -41,7 +41,7 @@ class Triangle
       raise TriangleError
     end
   end
-  # class TriangleError < StandardError
-  #   "Error"
-  # end
+  class TriangleError < StandardError
+    "Error"
+  end
 end
