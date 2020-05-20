@@ -21,6 +21,11 @@ class Triangle
 
   def kind
     sides = @side_1 + @side_2 + @side_3
+    if
+      @side_1 > 0 &&
+      @side_2 > 0 &&
+      @side_3 > 0 &&
+
       if
         @side_1 != @side_2 &&
         @side_1 != @side_3 &&
@@ -36,6 +41,9 @@ class Triangle
         @side_2 == @side_3 && @side_2 != @side_1
         :isosceles
       end
+    else
+      raise TriangleError
+    end
   end
 
   class TriangleError < StandardError
