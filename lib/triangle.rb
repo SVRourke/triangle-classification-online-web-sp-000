@@ -49,10 +49,7 @@ class Triangle
 
       end
     else
-      begin
-        raise TriangleError
-      rescue TriangleError
-      end
+      raise TriangleError
     end
   end
   class TriangleError < StandardError
