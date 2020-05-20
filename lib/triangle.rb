@@ -26,9 +26,9 @@ class Triangle
       @side_1 > 0 &&
       @side_2 > 0 &&
       @side_3 > 0 &&
-      sides > @side_1 &&
-      sides > @side_2 &&
-      sides > @side_3 &&
+      sides > @side_1 or
+      sides > @side_2 or
+      sides > @side_3
       if
         @side_1 != @side_2 &&
         @side_1 != @side_3 &&
