@@ -37,8 +37,6 @@ class Triangle
         @side_2 == @side_3 && @side_2 != @side_1
         :isosceles
       end
-    else
-      raise TriangleError
     end
   end
   class TriangleError < StandardError
