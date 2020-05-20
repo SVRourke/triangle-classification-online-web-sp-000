@@ -6,26 +6,22 @@ class Triangle
     @side_3 = side_3
   end
 
-  # def legal_triangle?
-  #   sides = @side_1 + @side_2 + @side_3
-  #   if
-  #     @side_1 > 0 &&
-  #     @side_2 > 0 &&
-  #     @side_3 > 0 &&
-  #     sides > @side_1 &&
-  #     sides > @side_2 &&
-  #     sides > @side_3 &&
-  #   end
-  # end
-
-
-  def kind
+  def legal_triangle?
     sides = @side_1 + @side_2 + @side_3
     if
       @side_1 > 0 &&
       @side_2 > 0 &&
       @side_3 > 0 &&
+      # sides > @side_1 &&
+      # sides > @side_2 &&
+      # sides > @side_3 &&
+    end
+  end
 
+
+  def kind
+    sides = @side_1 + @side_2 + @side_3
+    if legal_triangle?
       if
         @side_1 != @side_2 &&
         @side_1 != @side_3 &&
