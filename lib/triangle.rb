@@ -15,6 +15,7 @@ class Triangle
       # sides > @side_1 &&
       # sides > @side_2 &&
       # sides > @side_3 &&
+      true
     end
   end
 
