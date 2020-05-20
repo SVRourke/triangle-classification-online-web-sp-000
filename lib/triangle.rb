@@ -44,12 +44,17 @@ class Triangle
         @side_1 == @side_2 && @side_2 != @side_3 or
         @side_2 == @side_3 && @side_2 != @side_1
         :isosceles
-
       end
+      
     else
-      raise TriangleError
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+        puts "illegal"
+      end
     end
   end
+  
   class TriangleError < StandardError
   end
 end
