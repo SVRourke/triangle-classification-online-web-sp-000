@@ -20,7 +20,6 @@ class Triangle
 
 
   def kind
-    sides = @side_1 + @side_2 + @side_3
     if legal_triangle?
       if
         @side_1 != @side_2 &&
@@ -44,5 +43,4 @@ class Triangle
 
   class TriangleError < StandardError
   end
-
 end
